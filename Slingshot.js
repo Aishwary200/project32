@@ -1,4 +1,4 @@
-const Constraint = Matter.Constraint;
+
 class SlingShot{
     constructor(bodyA, pointB){
         var options = {
