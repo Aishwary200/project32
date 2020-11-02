@@ -16,32 +16,32 @@ function setup() {
   engine = Engine.create();
     world = engine.world;
 
-  ground=new Ground(380,650,280,20)
+  ground=new Ground(660,650,280,20)
    
-  block1=new Block(300,275,30,40)
-  block2=new Block(330,275,30,40)
-  block3=new Block(360,275,30,40)
-  block4=new Block(390,275,30,40)
-  block5=new Block(420,275,30,40)
-  block6=new Block(450,275,30,40)
-  block7=new Block(480,275,30,40)
+  block1=new Block(580,275,30,40)
+  block2=new Block(610,275,30,40)
+  block3=new Block(640,275,30,40)
+  block4=new Block(670,275,30,40)
+  block5=new Block(700,275,30,40)
+  block6=new Block(730,275,30,40)
+  block7=new Block(760,275,30,40)
 
-  block8=new Block(330,235,30,40)
-  block9=new Block(360,235,30,40)
-  block10=new Block(390,235,30,40)
-  block11=new Block(420,235,30,40)
-  block12=new Block(450,235,30,40)
+  block8=new Block(610,235,30,40)
+  block9=new Block(640,235,30,40)
+  block10=new Block(670,235,30,40)
+  block11=new Block(700,235,30,40)
+  block12=new Block(730,235,30,40)
 
-  block13=new Block(360,195,30,40)
-  block14=new Block(390,195,30,40)
-  block15=new Block(420,195,30,40)
+  block13=new Block(640,195,30,40)
+  block14=new Block(670,195,30,40)
+  block15=new Block(700,195,30,40)
 
-  block16=new Block(390,155,30,40)
+  block16=new Block(670,155,30,40)
 
-  polygon=new Polygon(50,200,10);
+  polygon=new Polygon(100,500,10);
   
 
-  slingShot=new SlingShot(polygon.body,{x:100,y:200})
+  slingShot=new SlingShot(polygon.body,{x:150,y:500})
   Engine.run(engine)
 }
 
