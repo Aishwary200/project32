@@ -18,25 +18,25 @@ function setup() {
 
   ground=new Ground(660,650,280,20)
    
-  block1=new Block(580,275,30,40)
-  block2=new Block(610,275,30,40)
-  block3=new Block(640,275,30,40)
-  block4=new Block(670,275,30,40)
-  block5=new Block(700,275,30,40)
-  block6=new Block(730,275,30,40)
-  block7=new Block(760,275,30,40)
+  block1=new Block(580,625,30,40)
+  block2=new Block(610,625,30,40)
+  block3=new Block(640,625,30,40)
+  block4=new Block(670,625,30,40)
+  block5=new Block(700,625,30,40)
+  block6=new Block(730,625,30,40)
+  block7=new Block(760,625,30,40)
 
-  block8=new Block(610,235,30,40)
-  block9=new Block(640,235,30,40)
-  block10=new Block(670,235,30,40)
-  block11=new Block(700,235,30,40)
-  block12=new Block(730,235,30,40)
+  block8=new Block(610,585,30,40)
+  block9=new Block(640,585,30,40)
+  block10=new Block(670,585,30,40)
+  block11=new Block(700,585,30,40)
+  block12=new Block(730,585,30,40)
 
-  block13=new Block(640,195,30,40)
-  block14=new Block(670,195,30,40)
-  block15=new Block(700,195,30,40)
+  block13=new Block(640,545,30,40)
+  block14=new Block(670,545,30,40)
+  block15=new Block(700,545,30,40)
 
-  block16=new Block(670,155,30,40)
+  block16=new Block(670,505,30,40)
 
   polygon=new Polygon(100,500,10);
   
