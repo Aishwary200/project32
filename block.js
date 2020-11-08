@@ -12,7 +12,7 @@ class Block{
       World.add(world, this.body);
     }
     display(){
-      console.log(this.body.speed)
+      
       if(this.body.speed <3){ 
         var angle = this.body.angle; 
         var pos= this.body.position; 
@@ -32,5 +32,12 @@ class Block{
           this.visibility = this.visibility -10; 
           pop(); 
         }
+    }
+    score(){
+      score=0;
+      if(this.visibility<0 && this.visibility>-1005){
+     score++;
+    
+      }
     }
 }

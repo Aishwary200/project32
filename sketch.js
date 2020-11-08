@@ -10,7 +10,11 @@ var block9,block10,block11,block12
 var block13,block14,block15,block16
 var ground;
 var polygon,slingShot;
-
+var score=0;
+var bg
+function preload(){
+  
+}
 function setup() {
   createCanvas(800,700);
   engine = Engine.create();
@@ -46,8 +50,13 @@ function setup() {
 }
 
 function draw() {
-  background("white"); 
+  
+  noStroke();
+    textSize(35);
+    fill("black")
+  text("Score: "+score,width-300,100)
   Engine.update(engine); 
+  getTime();
   ground.display();
   block1.display();
   block2.display();
@@ -67,6 +76,22 @@ function draw() {
   block16.display();
   slingShot.display();
   polygon.display();
+  block1.score();
+  block2.score();
+  block3.score();
+  block4.score();
+ block5.score();
+ block6.score();
+ block7.score();
+ block8.score();
+ block9.score();
+ block10.score();
+ block11.score();
+ block12.score();
+ block13.score();
+ block14.score();
+ block15.score();
+ block16.score();
 }
 function mouseDragged(){
   Matter.Body.setPosition(polygon.body, {x: mouseX , y: mouseY});
@@ -81,4 +106,19 @@ function keyPressed(){
       slingShot.attach(polygon.body);
   }
 }
+async function getTime(){
+  var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+  var responseJSON=await response.json();
+  var datetime=responseJSON.datetime
+  
+  var hour=datetime.slice(11,13)
+  if(hour>=06 && hour<=19){
+      background("lime")
+  }
+  else{
+      background("blue")
+  }
+  
+  
+  }
   
