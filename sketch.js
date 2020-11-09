@@ -11,9 +11,9 @@ var block13,block14,block15,block16
 var ground;
 var polygon,slingShot;
 var score=0;
-var bg
+var bg="lime"
 function preload(){
-  
+  getTime();
 }
 function setup() {
   createCanvas(800,700);
@@ -50,13 +50,13 @@ function setup() {
 }
 
 function draw() {
-  
+  getTime();
   noStroke();
     textSize(35);
     fill("black")
   text("Score: "+score,width-300,100)
   Engine.update(engine); 
-  getTime();
+  
   ground.display();
   block1.display();
   block2.display();
@@ -113,12 +113,12 @@ async function getTime(){
   
   var hour=datetime.slice(11,13)
   if(hour>=06 && hour<=19){
-      background("lime")
+      bg="blue"
   }
   else{
-      background("blue")
+      bg="lime"
   }
-  
+  background(bg);  
   
   }
   

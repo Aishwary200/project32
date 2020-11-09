@@ -12,7 +12,6 @@ class Block{
       World.add(world, this.body);
     }
     display(){
-      
       if(this.body.speed <3){ 
         var angle = this.body.angle; 
         var pos= this.body.position; 
@@ -32,12 +31,31 @@ class Block{
           this.visibility = this.visibility -10; 
           pop(); 
         }
+      // if(this.body.speed <3){ 
+      //   var angle = this.body.angle; 
+      //   var pos= this.body.position; 
+      //   push(); 
+      //   translate(pos.x, pos.y); 
+      //   fill("red")
+      //   rotate(angle); 
+      //   rectMode(CENTER); 
+      //   rect(0,0,this.width, this.height); 
+      //   pop(); 
+      // }
+
+      //   else{
+      //     World.remove(world, this.body); 
+      //     push(); 
+          
+      //     this.visibility = this.visibility -10; 
+      //     pop(); 
+      //   }
     }
     score(){
-      score=0;
-      if(this.visibility<0 && this.visibility>-1005){
+      
+      if(this.visibility<0 && this.visibility>-15){
      score++;
-    
+     console.log(this.visibility)
       }
     }
 }

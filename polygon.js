@@ -7,8 +7,7 @@ class Polygon{
             'density':2.0
         }
         this.body = Bodies.circle(x, y,radius, options);
-        this.width = width;
-        this.height = height;
+        
         this.radius=radius;
         World.add(world, this.body);
       }
